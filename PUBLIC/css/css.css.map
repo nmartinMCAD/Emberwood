@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK,CACH,UAAU,CAAE,UAAU,CAGxB,kBAAqB,CACnB,UAAU,CAAE,OAAO,CACnB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CCPZ,IAAK,CACH,gBAAgB,CCGV,IAAI,CCJZ,EAAG,CACD,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,GAAG,CACR,IAAI,CAAE,GAAG,CACT,SAAS,CAAE,qBAAoB,CAC/B,KAAK,CDAD,OAAO",
+"sources": ["../../DEV/sass/_reset.scss","../../DEV/sass/_layout.scss","../../DEV/sass/_vars.scss","../../DEV/sass/_typography.scss"],
+"names": [],
+"file": "css.css"
+}

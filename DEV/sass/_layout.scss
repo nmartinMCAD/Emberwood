@@ -1,3 +1,166 @@
 body {
   background-color: $black;
 }
+
+/************
+Scrollbar Styles
+************/
+body::-webkit-scrollbar {
+  width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+
+}
+
+section#primaryScreen {
+  height: 100vh;
+  background-image: linear-gradient(#190101, $orange);
+}
+
+/************
+Header Styles
+************/
+header {
+  height: $headerHeight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 7%, 0.8);
+  z-index: 5000;
+  transition: top 0.4s ease-in-out;
+}
+
+.header-up {
+  top: $headerRePosition;
+}
+
+.main-nav,
+.main-nav ul,
+.main-nav ul li,
+.main-nav ul li a {
+  height: 100%;
+}
+
+.main-nav {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+.main-nav ul li,
+.main-nav ul li a {
+  display: inline-block;
+}
+
+.main-nav ul li {
+  margin-right: -4px;
+}
+
+
+.main-nav ul li:hover {
+  background-color: $orange;
+  color: $yellow;
+}
+
+
+
+
+/************
+Main Styles
+************/
+
+main {
+  background-color: $black;
+  padding-top: 5rem;
+}
+
+main section {
+  width: 700px;
+  margin: auto;
+  color: $orange;
+  padding: 5rem 0;
+}
+
+/************
+Footer Styles
+************/
+
+footer {
+  background-color: $black;
+  padding: 5rem 0;
+}
+
+footer section {
+  width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+footer section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer section nav#footer-nav {
+  width: 30%;
+  float: left;
+  padding-right: 20%;
+  border-right: 2px solid $whiteCopy;
+}
+
+footer section nav ul li {
+  margin: 1rem 0;
+}
+
+footer section nav ul li:first-of-type {
+  margin-top: 0;
+}
+
+footer section nav ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+footer section div#copyrightContainer {
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/************
+Under Construction Styles
+************/
+.construction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.construction h1 {
+  display: block;
+  padding: 0;
+}
+
+.construction iframe {
+  margin: 1rem 0;
+}
+
+.construction a {
+  color: $whiteCopy;
+}

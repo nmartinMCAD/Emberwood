@@ -1,9 +1,28 @@
 /*****
 Colors
 *****/
-
-$black: #222;
+$white: #fff;
+$black: #210002;
 $red: #c44057;
 $blue: #125263;
 $green: #14716f;
 $light-green: #8ac975;
+$orange: #ac5f17;
+$yellow: #e4e577;
+$whiteCopy: #e8e1ce;
+
+/*****
+Fonts
+*****/
+$font: 'Josefin Sans', sans-serif;
+$header: 700;
+$copy: 400;
+
+
+/******************
+JavaScript Applied
+******************/
+
+//These values must be the same number in + / - values
+$headerHeight: 2rem;
+$headerRePosition: -2rem;

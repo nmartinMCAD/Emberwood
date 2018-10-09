@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TITLE</title>
+    <title>Emberwood the Game</title>
     <meta name="description" content="DESCRIPTION">
+
+    <link rel="icon" type="image/png" href="img/deerLogoOutlineFavIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
 
        <!--[if lt IE 9]>
          <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,6 +18,58 @@
   </head>
 
   <body>
-    <h1>Emberwood the Game : Site Under Construction</h1>
+    <header class="header-down">
+      <h1>Megalith Studios</h1>
+      <nav class="main-nav nav-horizontal">
+        <ul>
+          <li><a class="navLink" href="index.html" style="background-color: hsla(29, 76%, 38%, 0.2);">Emberwood</a></li>
+          <li><a class="navLink" href="team.html">Team</a></li>
+          <li><a class="navLink" href="https://emberwoodthegame.tumblr.com" target="_blank">Devlog</a></li>
+          <li><a class="navLink"href="partners.html">Partners</a></li>
+          <li><a class="navLink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="primaryScreen">
+      <img id="title" src="img/emberwoodTitleAndLogo.png" alt="Emberwood Title">
+
+      <div class="treeBannerContainer">
+        <img id="treeBanner" src="img/pineTreeSepiaBanner.png" alt="Silhouette of pine trees">
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section>
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <nav id="footer-nav">
+          <ul>
+            <li><a class="navLink" href="index.html">Emberwood</a></li>
+            <li><a class="navLink" href="team.html">Team</a></li>
+            <li><a class="navLink" href="https://emberwoodthegame.tumblr.com" target="_blank">Devlog</a></li>
+            <li><a class="navLink"href="partners.html">Partners</a></li>
+            <li><a class="navLink" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div id="copyrightContainer">
+          <p>Emberwood is a trademark of Megalith Studios</p>
+          <p>Copyright <span id="currentYear"></span></p>
+        </div>
+      </section>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

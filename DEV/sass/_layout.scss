@@ -21,8 +21,25 @@ body::-webkit-scrollbar-thumb {
 
 section#primaryScreen {
   height: 100vh;
-  background-image: linear-gradient(#190101, $orange);
+  background-image: linear-gradient($black, $orange);
 }
+
+//glowing effect overlayed on top of screen background - pure CSS!
+@keyframes glow {
+  0% {opacity: 0;}
+  50% {opacity: .5;}
+  100% {opacity: 0;}
+}
+
+div.glowOverlay {
+  height: 100%;
+  background-image: linear-gradient($black, $red);
+  animation-name: glow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 
 /************
 Header Styles
@@ -81,14 +98,14 @@ Main Styles
 ************/
 
 main {
-  background-color: $black;
+  background-color: $green;
   padding-top: 5rem;
 }
 
 main section {
   width: 700px;
   margin: auto;
-  color: $orange;
+  color: $light-green;
   padding: 5rem 0;
 }
 
@@ -97,7 +114,7 @@ Footer Styles
 ************/
 
 footer {
-  background-color: $black;
+  background-color: $green;
   padding: 5rem 0;
 }
 

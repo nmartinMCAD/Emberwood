@@ -38,7 +38,12 @@ main section h2 {
 
 main section p {
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.75;
+  font-size: 1.1em;
+}
+
+span.copyEmphasize {
+  color: $whiteCopy;
 }
 
 footer a {

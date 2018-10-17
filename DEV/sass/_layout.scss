@@ -99,14 +99,18 @@ Main Styles
 
 main {
   background-color: $green;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 main section {
   width: 700px;
   margin: auto;
   color: $light-green;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
+}
+
+main section p {
+  margin-bottom: 2rem;
 }
 
 /************

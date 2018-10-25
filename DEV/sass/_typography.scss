@@ -23,7 +23,10 @@ a {
   text-align: center;
   padding: .6rem 1rem;
   text-decoration: none;
+}
 
+.main-nav ul li:first-of-type a {
+  color: $whiteCopy;
 }
 
 .main-nav ul li a:hover {

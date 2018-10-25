@@ -6,17 +6,16 @@ body {
 Scrollbar Styles
 ************/
 body::-webkit-scrollbar {
-  width: .5em;
+  width: 0;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: $black;
+  background-color: $green;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   border-radius: 10px;
-
 }
 
 section#primaryScreen {
@@ -81,12 +80,12 @@ ul {
 }
 
 .main-nav ul li {
-  margin-right: -4px;
+  margin-right: -5px;
 }
 
 
 .main-nav ul li:hover {
-  background-color: $orange;
+  background-color: hsla(29, 76%, 38%, 0.5);
   color: $yellow;
 }
 
@@ -103,14 +102,48 @@ main {
 }
 
 main section {
-  width: 700px;
+  min-height: 100vh;
   margin: auto;
+  width: 800px;
   color: $light-green;
   padding: 2.5rem 0;
+  position: relative;
 }
 
-main section p {
+.textBlock {
+  width: 700px;
+  margin: auto;
+}
+
+.textBlock p {
   margin-bottom: 2rem;
+}
+
+#teamSection .teamMemberContainer {
+  margin: 5rem 0;
+  height: 500px;
+  position: relative;
+}
+
+.teamMemberContainer .memberCopy {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.teamMemberContainer .memberImgWrapper {
+  position: absolute;
+  top: 0;
+}
+
+.teamMemberContainer:nth-child(even) .memberCopy,
+.teamMemberContainer:nth-child(odd) .memberImgWrapper {
+  right: 0;
+}
+
+.teamMemberContainer:nth-child(odd) .memberCopy,
+.teamMemberContainer:nth-child(even) .memberImgWrapper {
+  left: 0;
+  text-align: right;
 }
 
 /************

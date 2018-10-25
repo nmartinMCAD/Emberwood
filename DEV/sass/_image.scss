@@ -11,3 +11,22 @@ img#treeBanner {
   left: 0;
   width: 100%;
 }
+
+div.memberImgWrapper {
+  width: 500px;
+  height: 500px;
+}
+
+img.teamMember {
+  width: 100%;
+}
+
+.teamMemberContainer:nth-child(even) .memberImgWrapper img.teamMember {
+  -webkit-clip-path: polygon(36% 2%, 100% 30%, 63% 88%, 0 96%);
+  clip-path: polygon(36% 2%, 100% 30%, 63% 88%, 0 96%);
+}
+
+.teamMemberContainer:nth-child(odd) .memberImgWrapper img.teamMember {
+  -webkit-clip-path: polygon(64% 2%, 0 30%, 37% 88%, 100% 96%);
+  clip-path: polygon(64% 2%, 0 30%, 37% 88%, 100% 96%);
+}
